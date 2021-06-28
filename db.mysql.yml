@@ -12,6 +12,7 @@ services:
                 --innodb_file_format=barracuda
                 --innodb_file_per_table=On
                 --innodb_large_prefix=On
+                --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: "m@0dl3ing"
       MYSQL_USER: moodle
