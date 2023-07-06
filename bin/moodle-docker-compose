@@ -162,10 +162,8 @@ then
 fi
 
 # Selenium VNC port
-export MOODLE_DOCKER_SELENIUM_SUFFIX=""
 if [[ $MOODLE_DOCKER_SELENIUM_VNC_PORT == *":"* ]] || [[ $MOODLE_DOCKER_SELENIUM_VNC_PORT -gt 0 ]]
 then
-    export MOODLE_DOCKER_SELENIUM_SUFFIX="-debug"
     # If no bind ip has been configured (bind_ip:port), default to 127.0.0.1
     if [[ ! $MOODLE_DOCKER_SELENIUM_VNC_PORT == *":"* ]]
     then
